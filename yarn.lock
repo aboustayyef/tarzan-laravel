@@ -1086,7 +1086,7 @@ esprima@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-3.0.0.tgz#53cf247acda77313e551c3aa2e73342d3fb4f7d9"
 
-ev-emitter@^1.0.2, ev-emitter@~1.0.1:
+ev-emitter@^1.0.2, ev-emitter@~1.0.0, ev-emitter@~1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/ev-emitter/-/ev-emitter-1.0.3.tgz#ee5ef74b6ed28d911b32ddcbfc97867f580937bc"
 
@@ -1199,7 +1199,7 @@ first-chunk-stream@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/first-chunk-stream/-/first-chunk-stream-1.0.0.tgz#59bfb50cd905f60d7c394cd3d9acaab4e6ad934e"
 
-fizzy-ui-utils@^2.0.0:
+fizzy-ui-utils@^2.0.0, fizzy-ui-utils@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/fizzy-ui-utils/-/fizzy-ui-utils-2.0.3.tgz#4e8ae47b30ba2de32ed7a6f4cbc9fb7faf583432"
   dependencies:
@@ -1213,7 +1213,7 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
-flickity:
+flickity, flickity@^2.0.0:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/flickity/-/flickity-2.0.5.tgz#e338c1b9a66a9c9a5e6948f9dfa48501b4603b6d"
   dependencies:
@@ -1223,6 +1223,20 @@ flickity:
     get-size "^2.0.0"
     tap-listener "^2.0.0"
     unidragger "^2.1.0"
+
+flickity-bg-lazyload:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/flickity-bg-lazyload/-/flickity-bg-lazyload-1.0.0.tgz#97bc083a78f64aa67f296a469667337b2fc2c430"
+  dependencies:
+    fizzy-ui-utils "^2.0.2"
+    flickity "^2.0.0"
+
+flickity-imagesloaded:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/flickity-imagesloaded/-/flickity-imagesloaded-2.0.0.tgz#a2d1d6aae6c26369ef2fa44f3eb948ea474e976b"
+  dependencies:
+    flickity "^2.0.0"
+    imagesloaded "^4.1.0"
 
 for-in@^0.1.5:
   version "0.1.6"
@@ -1787,6 +1801,12 @@ ieee754@^1.1.4:
 image-size@~0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.5.0.tgz#be7aed1c37b5ac3d9ba1d66a24b4c47ff8397651"
+
+imagesloaded@^4.1.0:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/imagesloaded/-/imagesloaded-4.1.1.tgz#53b5b66615360850a5a264b1293e7f4d06d3bd51"
+  dependencies:
+    ev-emitter "~1.0.0"
 
 in-publish@^2.0.0:
   version "2.0.0"

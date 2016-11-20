@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>Hello!</title>
-	<link rel="stylesheet" href="css/app.css">
 	<link rel="stylesheet" href="css/flickity.css">
+	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 	<header class="section">
@@ -37,9 +37,9 @@
 
 				{{-- Flickity --}}
 				<div class="main-carousel">
-				  <div class="carousel-cell" style="height:480px;width:100%;color:white; background-color:red"><h3 >First Slide</h3></div>
-				  <div class="carousel-cell" style="height:480px;width:100%;color:white; background-color:green"><h3>Second Slide</h3></div>
-				  <div class="carousel-cell" style="height:480px;width:100%;color:white; background-color:yellow"><h3>Third Slide</h3></div>
+				  <div class="carousel-cell carousel-bg-image" data-flickity-bg-lazyload="http://unsplash.it/1200/480/?random"></div>
+				  <div class="carousel-cell carousel-bg-image" data-flickity-bg-lazyload="http://unsplash.it/1201/480/?random"></div>
+				  <div class="carousel-cell carousel-bg-image" data-flickity-bg-lazyload="http://unsplash.it/1202/480/?random"></div>
 				</div>
 				
 			</div>	

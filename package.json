@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "bulma": "^0.2.3",
-    "flickity": "^2.0.5"
+    "flickity": "^2.0.5",
+    "flickity-bg-lazyload": "^1.0.0",
+    "flickity-imagesloaded": "^2.0.0"
   }
 }
