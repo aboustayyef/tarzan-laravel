@@ -4219,7 +4219,13 @@ a.panel-block:hover {
   background-repeat: no-repeat; }
 
 .mb {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1em; }
+
+.mb2 {
+  margin-bottom: 2em; }
+
+.mt {
+  margin-top: 1.5em; }
 
 .tarzan_nav__header {
   font-weight: 700;
