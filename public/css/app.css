@@ -4238,4 +4238,38 @@ a.panel-block:hover {
   .tarzan_nav__link:hover {
     text-decoration: underline; }
 
+.tarzan_services {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap; }
+
+.tarzan_service__tile {
+  background: grey;
+  position: relative;
+  height: 100px;
+  width: calc((100% - 1em) / 2);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .tarzan_service__tile.has_bottom_margin {
+    margin-bottom: 1em; }
+  .tarzan_service__tile.has_right_margin {
+    margin-right: 1em; }
+
+.tarzan_service__headline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 2em;
+  font-weight: 800;
+  color: white;
+  height: 40px;
+  background: -webkit-linear-gradient(top, transparent, rgba(10, 10, 10, 0.5));
+  background: linear-gradient(to bottom, transparent, rgba(10, 10, 10, 0.5));
+  width: 100%;
+  padding-left: 5px; }
+  @media all and (max-width: 1030px) {
+    .tarzan_service__headline {
+      font-size: 1.3em;
+      line-height: 1; } }
+
 /*# sourceMappingURL=app.css.map */

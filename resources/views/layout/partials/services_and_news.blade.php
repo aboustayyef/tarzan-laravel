@@ -1,26 +1,33 @@
 <div class="services section">
 	<div class="container">
 		<div class="columns">
-			<div class="column is-one-third-desktop is-12-">
-				<h1 class="title">Services</h1>
-				<div class="service_container">
-					<img class="service_container__image" src="http://unsplash.it/450/120/?random">
-				</div>
-				<div class="service_container">
-					<img class="service_container__image" src="http://unsplash.it/450/120/?random">
+			<div class="column is-one-half-tablet is-two-thirds-desktop">
+				<div class="tarzan_services">
+					<div class="tarzan_service__tile has_right_margin has_bottom_margin" style="background-image:url('http://unsplash.it/390/100/?random')">
+						<h3 class="tarzan_service__headline">
+							Haulage &amp; Fleet
+						</h3>
+					</div>
+					<div class="tarzan_service__tile has_bottom_margin" style="background-image:url('http://unsplash.it/390/100/?random')">
+						<h3 class="tarzan_service__headline">
+							Warehousing
+						</h3>
+					</div>
+					<div class="tarzan_service__tile has_right_margin" style="background-image:url('http://unsplash.it/390/100/?random')">
+						<h3 class="tarzan_service__headline">
+							Container
+						</h3>
+					</div>
+					<div class="tarzan_service__tile" style="background-image:url('http://unsplash.it/390/100/?random')">
+						<h3 class="tarzan_service__headline">
+							Commercial Stores
+						</h3>
+					</div>
 				</div>
 			</div>
-			<div class="column is-one-third-desktop is-12-">
-				<h1 class="title is-hidden-mobile">&nbsp;</h1>
-				<div class="service_container">
-					<img class="service_container__image" src="http://unsplash.it/450/120/?random">
-				</div>
-				<div class="service_container">
-					<img class="service_container__image" src="http://unsplash.it/450/120/?random">
-				</div>
-			</div>
-			<div class="column is-one-third-desktop is-12-">
-				<h1 class="title">News</h1>
+			<div class="column is-one-half-tablet is-one-third-desktop" >
+			<h3 class="title">News</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolor nulla, deleniti dolores, veritatis aliquid, vitae at similique reiciendis alias doloribus fugiat blanditiis cupiditate suscipit in! Quae dicta atque illum.</p>
 			</div>
 		</div>
 	</div>
