@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Hello!</title>
-	<link rel="stylesheet" href="css/flickity.css">
-	<link rel="stylesheet" href="css/app.css">
-</head>
-<body>
-	@include('layout.partials.header')
-	<content>
-		@include('layout.partials.slideshow')
-		@include('layout.partials.services_and_news')
-	</content>
-	@include('layout.partials.footer')
-	
+@extends('layout.main')
 
-	<script src="js/app.js"></script>
-</body>
-</html>
+@section('title')Welcome To Tarzan Enterprise Ltd. Ghana @stop
+@section('extracss')<link rel="stylesheet" href="{{asset('css/flickity.css')}}">@stop
+
+@section('content')
+	@include('layout.partials.slideshow')
+	@include('layout.partials.services_and_news')
+@stop

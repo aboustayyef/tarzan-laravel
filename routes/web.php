@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/{a?}/{b?}', [
+	'as'		=>		'pages',
+	'uses'		=>		'pagescontroller@index'
+]);
