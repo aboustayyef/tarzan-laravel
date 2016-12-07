@@ -4227,6 +4227,9 @@ a.panel-block:hover {
 .mt {
   margin-top: 1.5em; }
 
+.is-red {
+  color: #ed1b2e; }
+
 .tarzan_nav__header {
   font-weight: 700;
   color: #ed1b2e; }
@@ -4271,5 +4274,36 @@ a.panel-block:hover {
     .tarzan_service__headline {
       font-size: 1.3em;
       line-height: 1; } }
+
+body {
+  font-size: 16px;
+  line-height: 1.5; }
+
+p {
+  margin-bottom: 10px; }
+
+h2 {
+  font-size: 40px;
+  color: #ed1b2e;
+  margin-bottom: 15px; }
+  h2 + p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.25;
+    font-weight: 300; }
+
+ul {
+  margin-bottom: 10px; }
+
+h3 {
+  font-size: 32px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #656565; }
+
+h4 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #ed1b2e; }
 
 /*# sourceMappingURL=app.css.map */

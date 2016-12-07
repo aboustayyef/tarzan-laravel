@@ -14,3 +14,7 @@ class pagesController extends Controller
     	return $a . ucfirst($b);
     }
 }
+
+// Pages Available so far:
+// 		servicesHaulage
+// 		servicesWarehousing
