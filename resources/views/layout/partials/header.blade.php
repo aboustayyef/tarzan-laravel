@@ -23,7 +23,7 @@
 							About
 						</div>
 						<ul>
-							<a href="#"><li class="tarzan_nav__link" >Location</li></a>
+							<a href="#"><li class="tarzan_nav__link" >Our News</li></a>
 							<a href="#"><li class="tarzan_nav__link" >Company &amp; History</li></a>
 							<a href="#"><li class="tarzan_nav__link" >Management</li></a>
 						</ul>
@@ -33,8 +33,8 @@
 							Learn More
 						</div>
 						<ul>
-							<a href="#"><li class="tarzan_nav__link" >Our News</li></a>
-							<a href="#"><li class="tarzan_nav__link" >Contact Us</li></a>
+							<a href="#"><li class="tarzan_nav__link" >Location</li></a>
+							<a href="/learn/contact"><li class="tarzan_nav__link" >Contact Us</li></a>
 						</ul>
 					</div>
 				</div>

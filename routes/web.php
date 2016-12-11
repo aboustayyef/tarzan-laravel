@@ -19,3 +19,7 @@ Route::get('/{a?}/{b?}', [
 	'as'		=>		'pages',
 	'uses'		=>		'pagescontroller@index'
 ]);
+
+Route::post('/learn/contact', [
+	'uses'		=>	'pagescontroller@postEmail'
+]);

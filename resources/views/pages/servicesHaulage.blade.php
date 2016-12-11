@@ -31,6 +31,6 @@
 
 		<h3>Contact Us</h3>
 
-		<p>Have more questions about our haulages services? <a href ="contact.php">Get in touch</a> with us..</p>        
+		<p>Have more questions about our haulages services? <a href ="/learn/contact">Get in touch</a> with us..</p>        
 
 @stop
