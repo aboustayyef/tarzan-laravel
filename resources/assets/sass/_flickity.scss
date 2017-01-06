@@ -14,6 +14,7 @@
   background: transparent;
   border: 2px solid white;
 }
+
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
   background: white;
@@ -29,4 +30,9 @@
 	padding-bottom: 40%; 
 	background-size: 100%; 
 	background-repeat: no-repeat;
+}
+
+// Slight border so that white doesn't blend with page
+.carousel-bg-image{
+  border:1px solid #ececec;
 }

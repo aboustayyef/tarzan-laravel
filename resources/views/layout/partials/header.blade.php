@@ -6,7 +6,7 @@
 				<h2 class="title is-3 mb">Providing Backbone Logistics for Ghana’s Cocoa Industry since 1979</h2>
 			</div>
 			<div class="column is-6-desktop is-offset-1-desktop">
-				<div class="columns">
+				<div class="columns" role="navigation">
 					<div class="column is-third">
 						<div class="tarzan_nav__header title is-4">
 							Services
@@ -23,7 +23,7 @@
 							About
 						</div>
 						<ul>
-							<a href="#"><li class="tarzan_nav__link" >Our News</li></a>
+							<a href="https://news.tarzan.com.gh"><li class="tarzan_nav__link" >Our News</li></a>
 							<a href="#"><li class="tarzan_nav__link" >Company &amp; History</li></a>
 							<a href="#"><li class="tarzan_nav__link" >Management</li></a>
 						</ul>

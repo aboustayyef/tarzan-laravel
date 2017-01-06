@@ -18,7 +18,7 @@
 					</div>
 				
 					{{-- Main Content --}}
-					<div class="column is-8">
+					<div id="content" class="column is-8">
 						@yield('content')
 					</div>
 				</div>

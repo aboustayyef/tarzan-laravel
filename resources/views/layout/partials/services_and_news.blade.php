@@ -6,22 +6,24 @@
 					<h2 class="title" style="width:100%">
 						Our Services
 					</h2>
-					<div class="tarzan_service__tile has_right_margin has_bottom_margin" style="background-image:url('http://unsplash.it/390/100/?random')">
+					<div class="tarzan_service__tile has_right_margin has_bottom_margin" style="background-image:url('{{asset('img/haulage-and-fleet.jpg')}}')">
 						<h3 class="tarzan_service__headline">
 							Haulage &amp; Fleet
 						</h3>
 					</div>
-					<div class="tarzan_service__tile has_bottom_margin" style="background-image:url('http://unsplash.it/390/100/?random')">
+
+					<div class="tarzan_service__tile has_bottom_margin" style="background-image:url('{{asset('img/warehouses.jpg')}}')">
 						<h3 class="tarzan_service__headline">
 							Warehousing
 						</h3>
 					</div>
-					<div class="tarzan_service__tile has_right_margin" style="background-image:url('http://unsplash.it/390/100/?random')">
+					
+					<div class="tarzan_service__tile has_right_margin" style="background-image:url('{{asset('img/warehouses.jpg')}}')">
 						<h3 class="tarzan_service__headline">
-							Container
+							Container Depot
 						</h3>
 					</div>
-					<div class="tarzan_service__tile" style="background-image:url('http://unsplash.it/390/100/?random')">
+					<div class="tarzan_service__tile" style="background-image:url('{{asset('img/warehouses.jpg')}}')">
 						<h3 class="tarzan_service__headline">
 							Commercial Stores
 						</h3>
@@ -29,11 +31,44 @@
 				</div>
 			</div>
 			<div class="column is-one-half-tablet is-one-third-desktop" >
-				<h2 class="title">
-					Latest News
-				</h3>
-				<img src="http://unsplash.it/200/100/?random">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolor nulla, deleniti dolores, veritatis aliquid, vitae at similique reiciendis alias doloribus fugiat blanditiis cupiditate suscipit in! Quae dicta atque illum.</p>
+
+				<?php 
+
+					// If latest post details are not cached, fetch and cache
+					// to reset cache and get new posts, go to /cache-clear 
+
+					if (! \Cache::has('postDetails')) {
+						// get latest post
+						$latestPosts = collect(json_decode(file_get_contents('https://news.tarzan.com.gh/wp-json/wp/v2/posts')));
+						$latestPost = $latestPosts->first();
+						$postDetails = [
+							'title'	=>	$latestPost->title->rendered,
+							'url'	=>	$latestPost->link,
+							'data'	=> New Carbon\Carbon($latestPost->date),
+							'excerpt' => strip_tags($latestPost->excerpt->rendered)
+						];
+
+						// if has media
+						
+						if ($latestPost->featured_media > 0) {
+							$media = json_decode(file_get_contents('https://news.tarzan.com.gh/wp-json/wp/v2/media/' . $latestPost->featured_media));
+							$media_url = $media->guid->rendered;
+							$postDetails['media'] = $media_url;
+						}
+						\Cache::forever('postDetails', $postDetails );
+					}
+
+					$postDetails = \Cache::get('postDetails');
+
+				?>
+
+
+
+
+				<h2 class="title">News</h2>
+				<h3 class="subtitle is-3 news__title"><a href="{{$postDetails['url']}}">{{$postDetails['title']}}</a></h3>
+				<a href="{{$postDetails['url']}}"><img class="news__image" src="{{$postDetails['media']}}"></a>
+				<p>{{$postDetails['excerpt']}} &mdash; <a href="{{$postDetails['url']}}"> read > </a></p>
 			</div>
 		</div>
 	</div>

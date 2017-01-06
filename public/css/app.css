@@ -4218,6 +4218,9 @@ a.panel-block:hover {
   background-size: 100%;
   background-repeat: no-repeat; }
 
+.carousel-bg-image {
+  border: 1px solid #ececec; }
+
 .mb {
   margin-bottom: 1em; }
 
@@ -4281,7 +4284,7 @@ content {
   font-size: 2em;
   font-weight: 800;
   color: white;
-  height: 40px;
+  height: 50px;
   background: -webkit-linear-gradient(top, transparent, rgba(10, 10, 10, 0.5));
   background: linear-gradient(to bottom, transparent, rgba(10, 10, 10, 0.5));
   width: 100%;
@@ -4291,33 +4294,41 @@ content {
       font-size: 1.3em;
       line-height: 1; } }
 
+.news__title a {
+  font-weight: bold;
+  color: #444; }
+
+.news__image {
+  margin-bottom: 5px;
+  max-width: 66.666%; }
+
 body {
   font-size: 16px;
   line-height: 1.5; }
 
-p {
+#content p {
   margin-bottom: 10px; }
 
-h2 {
+#content h2 {
   font-size: 40px;
   color: #ed1b2e;
   margin-bottom: 15px; }
-  h2 + p {
+  #content h2 + p {
     font-size: 24px;
     margin-bottom: 20px;
     line-height: 1.25;
     font-weight: 300; }
 
-ul {
+#content ul {
   margin-bottom: 10px; }
 
-h3 {
+#content h3 {
   font-size: 32px;
   margin: 10px 0;
   font-weight: bold;
   color: #656565; }
 
-h4 {
+#content h4 {
   font-size: 24px;
   margin: 10px 0;
   color: #ed1b2e; }
