@@ -4249,6 +4249,9 @@ content {
   -webkit-box-flex: 1;
   flex-grow: 1; }
 
+.is-short {
+  border-bottom: 1px solid #e6e6e6; }
+
 .tarzan_nav__header {
   font-weight: 700;
   color: #ed1b2e; }
@@ -4259,6 +4262,9 @@ content {
   padding-top: 3px; }
   .tarzan_nav__link:hover {
     text-decoration: underline; }
+  .tarzan_nav__link.active {
+    color: black;
+    font-weight: bold; }
 
 .tarzan_services {
   display: -webkit-box;
@@ -4306,6 +4312,12 @@ body {
   font-size: 16px;
   line-height: 1.5; }
 
+#content p:first-child {
+  font-size: 24px;
+  margin-bottom: 20px;
+  line-height: 1.25;
+  font-weight: 300; }
+
 #content p {
   margin-bottom: 10px; }
 
@@ -4332,5 +4344,13 @@ body {
   font-size: 24px;
   margin: 10px 0;
   color: #ed1b2e; }
+
+.management__name {
+  font-size: 18px;
+  font-weight: bold; }
+
+.management__subtitle {
+  font-style: italic;
+  font-color: #444; }
 
 /*# sourceMappingURL=app.css.map */

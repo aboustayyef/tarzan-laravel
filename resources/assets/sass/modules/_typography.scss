@@ -3,7 +3,17 @@ body{
 	line-height:1.5;
 }
 
+@mixin LeadingParagraph(){
+	font-size:24px;
+	margin-bottom:20px;
+	line-height: 1.25;
+    font-weight: 300;
+}
+
 #content{
+	p:first-child { 
+	    @include LeadingParagraph();
+	}
 	p{
 		margin-bottom: 10px;
 	}
@@ -13,10 +23,7 @@ body{
 		color:$red;
 		margin-bottom:15px;
 		&+p{
-			font-size:24px;
-			margin-bottom:20px;
-			line-height: 1.25;
-		    font-weight: 300;
+			@include LeadingParagraph();
 		}
 	}
 

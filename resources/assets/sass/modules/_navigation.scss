@@ -10,4 +10,8 @@
     &:hover{
     	text-decoration: underline;
     }
+	&.active{
+		color:black;
+		font-weight:bold;
+	}
 }

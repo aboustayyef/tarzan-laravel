@@ -1,6 +1,6 @@
 <header class="section">
 	<div class="container">
-		<div class="columns">
+		<div class="columns is-short">
 			<div class="column is-5-desktop">
 				<a href="/"><img class="mb2" src="{{asset('img/tarzan-logo.png')}}" width="191" height="56" ></a>
 				<h2 class="title is-3 mb">Providing Backbone Logistics for Ghana’s Cocoa Industry since 1979</h2>
@@ -12,11 +12,13 @@
 							Services
 						</div>
 						<ul>
-							<a href="/services/haulage"><li class="tarzan_nav__link" >Haulage &amp; fleet</li></a>
-							<a href="/services/warehousing"><li class="tarzan_nav__link" >Warehousing</li></a>
-							<a href="/services/container"><li class="tarzan_nav__link" >Container</li></a>
-							<a href="/services/stores"><li class="tarzan_nav__link" >Commercial Stores</li></a>
+							{!! tz_menu_item($title = "Haulage &amp; fleet", $path = 'services/haulage' , \Request::Path() ) !!}
+							{!! tz_menu_item($title = "Warehousing", $path = 'services/warehousing' , \Request::Path() ) !!}
+							{!! tz_menu_item($title = "Container", $path = 'services/container' , \Request::Path() ) !!}
+							{!! tz_menu_item($title = "Commercial Stores", $path = 'services/stores' , \Request::Path() ) !!}
+
 						</ul>
+
 					</div>
 					<div class="column is-third">
 						<div class="tarzan_nav__header title is-4">
@@ -24,17 +26,20 @@
 						</div>
 						<ul>
 							<a href="https://news.tarzan.com.gh"><li class="tarzan_nav__link" >Our News</li></a>
-							<a href="#"><li class="tarzan_nav__link" >Company &amp; History</li></a>
-							<a href="#"><li class="tarzan_nav__link" >Management</li></a>
+							{!! tz_menu_item($title = "Company &amp; History", $path = 'about/company' , \Request::Path() ) !!}
+							{!! tz_menu_item($title = "Management", $path = 'about/management' , \Request::Path() ) !!}
 						</ul>
+
 					</div>
+
 					<div class="column is-third">
 						<div class="tarzan_nav__header title is-4">
 							Learn More
 						</div>
 						<ul>
-							<a href="#"><li class="tarzan_nav__link" >Location</li></a>
-							<a href="/learn/contact"><li class="tarzan_nav__link" >Contact Us</li></a>
+						
+							{!! tz_menu_item($title = "Location", $path = 'learn/location' , \Request::Path() ) !!}
+							{!! tz_menu_item($title = "Contact Us", $path = 'learn/contact' , \Request::Path() ) !!}
 						</ul>
 					</div>
 				</div>

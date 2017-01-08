@@ -11,3 +11,7 @@ body{
 content{
 	flex-grow:1;
 }
+
+.is-short{
+	border-bottom:1px solid lighten(silver,15);
+}
