@@ -4299,9 +4299,11 @@ content {
     .tarzan_service__headline {
       font-size: 1.3em;
       line-height: 1; } }
+  .tarzan_service__headline:hover {
+    background: #ed1b2e;
+    color: white; }
 
 .news__title a {
-  font-weight: bold;
   color: #444; }
 
 .news__image {
@@ -4311,6 +4313,18 @@ content {
 body {
   font-size: 16px;
   line-height: 1.5; }
+
+.tarzan__motto {
+  font-weight: 800; }
+
+h1, h2, h3, h4 {
+  font-weight: 800; }
+
+p.lead {
+  font-size: 24px;
+  margin-bottom: 20px;
+  line-height: 1.25;
+  font-weight: 300; }
 
 #content p:first-child {
   font-size: 24px;
@@ -4337,7 +4351,6 @@ body {
 #content h3 {
   font-size: 32px;
   margin: 10px 0;
-  font-weight: bold;
   color: #656565; }
 
 #content h4 {

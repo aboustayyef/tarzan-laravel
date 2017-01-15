@@ -6,4 +6,5 @@
 @section('content')
 	@include('layout.partials.slideshow')
 	@include('layout.partials.services_and_news')
+	@include('layout.partials.bluegallery')
 @stop

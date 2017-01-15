@@ -3,7 +3,7 @@
 		<div class="columns is-short">
 			<div class="column is-5-desktop">
 				<a href="/"><img class="mb2" src="{{asset('img/tarzan-logo.png')}}" width="191" height="56" ></a>
-				<h2 class="title is-3 mb">Providing Backbone Logistics for Ghana’s Cocoa Industry since 1979</h2>
+				<h2 class="tarzan__motto title is-3 mb">Providing Backbone Logistics for Ghana’s Cocoa Industry since 1979</h2>
 			</div>
 			<div class="column is-6-desktop is-offset-1-desktop">
 				<div class="columns" role="navigation">
